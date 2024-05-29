@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="db_usersformDataSet1" targetNamespace="http://tempuri.org/db_usersformDataSet1.xsd" xmlns:mstns="http://tempuri.org/db_usersformDataSet1.xsd" xmlns="http://tempuri.org/db_usersformDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="db_usersformConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="db_usersformConnectionString (Settings)" PropertyReference="ApplicationSettings.LoginTest.Properties.Settings.GlobalReference.Default.db_usersformConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_diaryTableAdapter" GeneratorDataComponentClassName="tbl_diaryTableAdapter" Name="tbl_diary" UserDataComponentName="tbl_diaryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_usersformConnectionString (Settings)" DbObjectName="tbl_diary" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Saved_datetime, username, diary FROM tbl_diary</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_usersTableAdapter" GeneratorDataComponentClassName="tbl_usersTableAdapter" Name="tbl_users" UserDataComponentName="tbl_usersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_usersformConnectionString (Settings)" DbObjectName="tbl_users" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT username, [password] FROM tbl_users</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="db_usersformDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="db_usersformDataSet1" msprop:Generator_DataSetName="db_usersformDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_diary" msprop:Generator_RowEvHandlerName="tbl_diaryRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_diaryRowDeleted" msprop:Generator_RowDeletingName="tbl_diaryRowDeleting" msprop:Generator_RowEvArgName="tbl_diaryRowChangeEvent" msprop:Generator_TablePropName="tbl_diary" msprop:Generator_RowChangedName="tbl_diaryRowChanged" msprop:Generator_RowChangingName="tbl_diaryRowChanging" msprop:Generator_TableClassName="tbl_diaryDataTable" msprop:Generator_RowClassName="tbl_diaryRow" msprop:Generator_TableVarName="tabletbl_diary" msprop:Generator_UserTableName="tbl_diary">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_users" msprop:Generator_RowEvHandlerName="tbl_usersRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_usersRowDeleted" msprop:Generator_RowDeletingName="tbl_usersRowDeleting" msprop:Generator_RowEvArgName="tbl_usersRowChangeEvent" msprop:Generator_TablePropName="tbl_users" msprop:Generator_RowChangedName="tbl_usersRowChanged" msprop:Generator_RowChangingName="tbl_usersRowChanging" msprop:Generator_TableClassName="tbl_usersDataTable" msprop:Generator_RowClassName="tbl_usersRow" msprop:Generator_TableVarName="tabletbl_users" msprop:Generator_UserTableName="tbl_users">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
